@@ -8,6 +8,10 @@
         propriété : valeur ;
     }
 */
+/* je selectionne deux élèments au même temps avec une virgule (,) */
+p, pre {
+    color: blue
+}
 
 p {
     color: blue ;
@@ -20,3 +24,10 @@ p {
         ->notation rgb(255, 255, 255) -> rouge vert bleu
         ->notation rgba(255,255,255,0) -> le dernier chiffre correspond à l'opacité : entre 0 (transparent) et 1 (opaque)
         -notation avec mots clés -> red, green, bleu ... 
+        */
+
+
+
+        span {
+            color: green;
+        }
