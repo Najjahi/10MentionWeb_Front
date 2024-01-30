@@ -65,10 +65,42 @@ div {
     margin: 50px; /*ajouter une marge externe(espace exterieur de 50px à l'element*/
     
 }
-div p {
+div  {
 
 
     background-color: rgba(5, 19, 21, .6) ;
     padding: 50px;
-    border: radius: 30px;
+    border-radius: 30px;
 }
+
+/*style pour la classe nomée "imagecheval" */
+.imagecheval:hover{
+    transform: scale(1.1); /* agrandit l'element 110% de sa taille d'origine */
+
+}
+
+    /* la propriété transition permet de spécifier une transition animée entre les états d'un élément*/
+ 
+/* la propriété transforme avec la fonction scale() permet de modifier l'echelle d'un element en modifiant sa taille. la fonction scale() prend un argument qui est le facteur d'echelle*/
+   
+
+
+.imagecheval{
+  
+    transition: 1s;
+}
+    /* style pour la classe nommée "imagedauphin" */
+
+    .imagedauphin {
+            display: block; /* definit l'affichage de l'element et tant que block*/
+            margin: 30px auto;
+            transition: transform 1s ;
+    }
+
+.imagedauphin:hover {
+
+    transform: rotate(-10deg); /* fait tourner l'image de -10deg lorsqu'elle est survolée*/
+}
+
+
+

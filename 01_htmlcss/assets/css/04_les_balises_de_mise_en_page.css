@@ -1,0 +1,90 @@
+body{
+    background-color: #eeedeb;
+}
+div.navigation{
+    text-align: center;
+    border: solid 2px #3c0753;
+    padding: 20px;
+}
+
+h1{
+    text-transform: uppercase ;
+    color: #3c0753;
+}
+
+.navigation a {
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #d9a9db;
+    color: #fff;
+    display: inline-block;
+    width: 33%;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+
+.navigation a:hover {
+    background-color: black;
+}
+
+div.main{
+    border: 2px solid #3c0753;
+    padding: 20px 50px;
+    margin-top: 10px;
+}
+
+div.section1, div.section2 {
+    text-align: center;
+}
+
+div.section1 img{
+    border-radius: 20px;
+}
+
+div.section2
+{
+
+    background-image: url(../img/maik-jonietz-_yMciiStJyY-unsplash.jpg);
+
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color:#fff
+
+}
+
+div.section2 p {
+    display: inline-block;
+    border: solid 2px #3c0753;
+    width: 33%;
+    padding: 20px;
+    background-color: black;
+    text-align: left;
+ 
+}
+
+div.pieddepage {
+    border:solid 2px #3c0753;
+    margin-top: 20px;
+    /*text-align: center;*/
+}
+div.pieddepage ul {
+    display: inline-block;
+    width: 30%;
+    list-style: none;
+    
+}
+div.pieddepage ul li {
+margin-bottom: 20px;
+}
+
+    div.pieddepage ul li a {
+        color: #3c0753;
+        background-color:#d9a9db;
+        padding: 8px 12PX;
+        border-radius: 3px;
+        font-weight: bold; 
+        text-decoration: none ;
+
+}
