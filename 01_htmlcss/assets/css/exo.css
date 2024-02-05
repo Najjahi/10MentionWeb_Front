@@ -1,0 +1,36 @@
+
+body
+{
+    background-color: #EEEDEB;
+    text-align: center
+}
+
+
+
+
+
+ footer {
+    margin-top: 20px;
+    border: #3C0753 solid 2px;
+}
+footer ul  {
+    display: inline-block;
+    text-align: right
+    width: 30%;
+    list-style: none;
+    
+}
+footer ol li:first-child  {
+    color:yellow;
+}
+footer ol li:nth-child (2) article{
+    color:blue ;
+}
+
+footer ol li:nth-child (3) article{
+    color:green ;
+}
+
+
+    
+
