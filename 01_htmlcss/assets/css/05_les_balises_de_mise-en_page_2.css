@@ -45,8 +45,9 @@ h1 a {
 nav a {
     color: #EEEDEB;
     width: 30%;
-    display: inline-block;
-    padding: 5px 0;
+    display: flex;
+    padding: 5px 0;  
+    width: 30%;
 }
 nav a:hover {
      background-color: #3C0753;
@@ -89,7 +90,7 @@ main section:nth-child(2) article  {
     border: #3C0753 solid 2px;
 }
 footer ul  {
-    display: inline-block;
+    display: flex;
     width: 30%;
     list-style: none;
     

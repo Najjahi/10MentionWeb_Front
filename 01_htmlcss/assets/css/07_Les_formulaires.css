@@ -1,18 +1,19 @@
 /* @font-face : c'est une regle (at-rule) CSS spéciale qui permet de définir des polices personnalisées pour etre utilisées dans une page web */
-@font-face {
+/* @font-face {
     font-family: "Jacquarda Bastarda 9";
     src: url("../Jacquarda_Bastarda_9/JacquardaBastarda9-Regular.ttf")
 }
 body{
     background-color: azure;
-}
+} */
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap');
+/* @import: C'est une règle at-rule CSS qui est utilisée pour importer des ressources externes, telles que des feuilles de style, des polices, etc., dans une feuille de style CSS */
 h1 {
     text-transform: uppercase;
     text-align: center;
     color: #4D4DC8;
     font-family: "Jacquarda Bastarda 9", serif;
-    font-weight: 700;
-   
+    font-weight: 700;   
 }
 form {
 border: 2px solid black;
@@ -23,13 +24,12 @@ fieldset {
     margin-top: 10px;
     padding: 30px;
 }
-legend{ 
+legend { 
     color: steelblue;
     background-color: #fff;
     border: 1px solid steelblue;
     border-radius: 25px;
-    padding: 10px;
-
+    padding: 10px; 
 }
 div {
     padding: 10px 0;
@@ -38,7 +38,7 @@ div {
     display: flex;
     justify-content: space-around;
 }
-.enoie input {
+.envoie input {
     background-color: cadetblue;
     padding: 13px;
     border-radius: bolder;

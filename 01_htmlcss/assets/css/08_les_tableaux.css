@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #FFF7E7;
+
+}
+h1 {
+    text-align: center;
+
+}
+caption {
+    color: #6e2142;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+table {
+    border: 3px solid #6e2142;
+    width: 90%;
+    padding: 30px;
+    margin-top: 50px;
+    background-color: pink;
+    /* par defaut la bordure contient 2 traits pour que le trait soit unique on utilise la propriete border-collapse  avec une valeur collapse */
+    border-collapse: collapse;
+    text-align: center;
+}
+th, td {
+    border: 3px solid #6e2142;
+    padding: 10px;
+}
+thead, tfoot {
+    background-color: #be7575;
+}
+#demoRowspan tr :first-child:not(:last-child) {
+    background-color: #be7575;
+}
+#exo1 td, #exo2 td {
+    height: 50px;
+    width: 50px;
+    border: none;
+}
+.noir {
+    background-color: black;
+
+}
+
+.rouge {
+    background-color: red;
+
+}
+#exo1 table, #exo1 td, #exo2 table, #exo2 td{
+    border: none;
+    
+}
+.borderT {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#exoRowspan {
+  height: 15em;
+  background-color: white;
+}
+
+#exoColspan td {
+  width: 14.28%;
+  height: 14.28%;
+}
+
+#exoRowspan th, #exoRowspan td, #exoColspan th, #exoColspan td, #exoColspan2 th, #exoColspan2 td  {
+  border: none;  
+}
+
+.black {
+  background-color: black;
+}
+.red {
+  background-color: red;
+}
+
+.borderLeft {
+  border-radius: 10px 0 0 0;
+}
+
+.borderRight {
+  border-radius: 0 10px 0 0;
+}
+    /*...... exercice2.axel......... */
+    #exoRowspan {
+        height: 15em;
+        background-color: white;
+      }
+      
+      
+      
+      #exoRowspan th, #exoRowspan td {
+        border: none;  
+      }
+      
+      .black {
+        background-color: black;
+      }
+      .red {
+        background-color: red;
+      }
+      
+      .borderLeft {
+        border-radius: 10px 0 0 0;
+      }
+      
+      .borderRight {
+        border-radius: 0 10px 0 0;
+      }
+          
