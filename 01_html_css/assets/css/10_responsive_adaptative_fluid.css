@@ -2,6 +2,7 @@
 /* 
     Une page HTML standard sans style déclaré bénéficiera néanmoins d'un ensemble de styles automatiquement appliqués par le navigateur, permettant ainsi de distinguer les différents éléments. 
     Afin d'initialiser ces valeurs, on a la possibilité de les annuler dans le CSS en sélectionnant chaque élément et en modifiant ses propriétés.
+
     Une autre approche consiste à utiliser le reset CSS : https://meyerweb.com/eric/tools/css/reset/
     ou le mini reset : https://jgthms.com/minireset.css/
 
@@ -9,14 +10,15 @@
 @import url(reset.css);
 
 /* 
-    Le problème de cette technique, c'est qu'elle annule certains styles par défaut des navigateurs qui sont réellement utiles  et cela  nécessiter plus de travail pour rétablir certains styles de base qui ont été écrasés par le reset.
+    Le problème de cette technique, c'est qu'elle annule certains styles par défaut des navigateurs qui sont réellement utiles  et cela  nécessiter plus de travail pour rétablir certains styles de base qui ont été écrasés par le reset.https://meyerweb.com/eric/tools/css/reset/
+    ou le mini reset : https://jgthms.com/minireset.css/
 */
-
+@import url(normalize.css);
 /*  
     Normalize.css est une bibliothèque CSS qui vise à rendre les styles des navigateurs plus cohérents et prévisibles en normalisant les styles par défaut des éléments HTML il conserve certains styles par défaut qui sont considérés comme bénéfiques et utiles, tout en corrigeant et en uniformisant d'autres styles pour assurer une cohérence entre les navigateurs.
     https://necolas.github.io/normalize.css/
  */
- @import url(normalize.css);
+
  /* *************************  Responsive Web Designe  ********************************** */
  /* 
     Le Responsive Web Design englobe les techniques de conception de contenus internet qui permettent de proposer des contenus auto-adaptables en fonction des interfaces de consultation utilisées par le visiteur

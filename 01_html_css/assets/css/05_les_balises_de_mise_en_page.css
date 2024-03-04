@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #eeedeb;
+    text-align: center;
+}
+
+header{
+    border: 2px solid #3c0753;
+    padding: 20px;
+}
+
+h1 {
+    text-transform: uppercase ;
+    color: #3c0753;
+    font-size: 50px;
+}
+
+nav a{
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #d9a9db;
+    color: #fff;
+    display: inline-block;
+    width: 33%;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+nav a:hover {
+    background-color: #3c0753;
+}
+/* style pour le main */
+main {
+    margin-top: 10px;
+    padding: 20px 50px;
+    border: 2px solid #3c0753;
+}
+
+main :first-child img { 
+    border-radius: 20px;
+}
+
+main section:nth-child(2){
+    background-image: url(../img/unsplash.jpg);
+    padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+main section:nth-child(2) article{
+    display: inline-block;
+    border: solid 2px #3c0753;
+    padding: 20px;
+    width: 33%;
+    background-color: black;
+    text-align: left;
+}
+/* style pour le footer */
+
+footer {
+    border: solid 2px #3c0753;
+    margin-top: 20px;
+}
+
+footer ul {
+    display: inline-block;
+    width: 33%;
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #3c0753;
+    padding: 8px 12px;
+    background-color: #d9a9db;
+    border-radius: 10px;
+}
