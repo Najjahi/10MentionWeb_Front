@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les tableau en JS</title>
+    <title> Les tableaux en JS </title>
 </head>
 <body>
     <SCript>
@@ -19,17 +19,307 @@
         //////////////////----------
         // declarer un tableau indexé
         let monTableau = []; // 1ére façon pour déclarer un tableau
-        colsole.log(monTableau);
+        console.log(monTableau);
 
         let myArray = new Array; // 2eme façon pour déclarer un tableau
         // crée une nouvelle variable appelée myArray et lui assigne une nouvelle instance de la classe Array. En JavaScript, Array est une classe prédéfinie qui représente une collection ordonnée d'éléments. Lorsque vous utilisez new Array(), vous créez un nouvel objet de type tableau (array).
-        colsole.log(myArray);
-        // myArray et monTableauvsont des tableaux qui peuvent contenir plusieurs informations.
+        console.log(myArray);
+        // myArray et monTableauv sont des tableaux qui peuvent contenir plusieurs informations.
+        // affecter des valeurs au tableau; plusieurs methodes :
+        
+        // A- 
+        monTableau = ["Paul" , "Adama" , "Semir"];// chaque element dans un tableu est séparé par une virgule 
+        console.log(monTableau);
+        // document.write(monTableau);
+        console.table(monTableau);
+        
+        //B- chaque element dans un tableau est identifiable par son index 
+        // Attention : un tableau commence par index 0 !!!!!
+        myArray[0] = "Cleid"
+        myArray[1] = "Imane ";
+        myArray[2] = "Maureene";
+        myArray[3] = "Gary";
+
+        console.log(myArray);
+        // document.write(myArray);
+        console.table(myArray);
+
+        // pour selectionner un element de notre tableau; il suffit d'appeler : monTableau[indexDesiré]
+        console.log(myArray[2]); // Maureene
+        console.log(myArray[0]); // Cleid
+
+        // remarque
+        // les STRING sont considéré comme des array
+        const PRENOM ='Sahar';
+        console.log(PRENOM[2]);// S=0 a=1 h=2 a=3 r=4 => il affiche h la 2eme lettre de Saher
+
+        // exercice
+        // Créer un tableau myArray avec les prénoms des personnes dans le tableau myArray 
+        // Afficher dans la page chaque prénom avec son nom associé 
+        // myArray2 et on stock 1 Najjahi 2 Manigat 3 Marolay 4 Monteiro
+        
+        // 1ere methode
+        let myArray2 =[ "Najjahi" , "Manigat" , "Monteiro", "Marolany" ]; 
+        document.write(myArray[1] + " " + myArray2[0] + "<br>" + myArray[0] + " " + myArray2[1] +  "<br>" + myArray[2] + " " + myArray2[3]  + "<br>" + myArray[3] + " " + myArray2[2] +  "<br>" )
+        
+        // 2ere methode
+            
+        document.write(myArray[1] + ' ' + myArray2[0] + '<br>' )
+        document.write(myArray[0] + ' ' + myArray2[1] + '<br>'  )
+        document.write(myArray[2] + ' ' + myArray2[3] + '<br>' )
+        document.write(myArray[3] + ' ' + myArray2[2] + '<br>')
+
+        // création d'un tableau avec deux tableaux indéxés
+        // //---------------------
+        // -Tableau multidimentionnel indexé
+
+        let groupe1 = [myArray, myArray2];
+        document.write(groupe1[0][1] + ' ' + groupe1[1][0] + '<br>' );
+        document.write(groupe1[0][0] + ' ' + groupe1[1][1] + '<br>'  );
+        document.write(groupe1[0][2] + ' ' + groupe1[1][3] + '<br>' );
+        document.write(groupe1[0][3] + ' ' + groupe1[1][2] + '<br>' );
+
+        /*créer un Tableau multidimentionnel qui permet d'afficher cette ligne :
+         "nom : ferchichi , prenom , sahar , tétéphone : 0755555555", sachant que 
+         nom, prenom et téléphone sont les éléments du premier tableau avec l'index 0
+         et les valeurs ferchichi et 0755555555 sont les élements du deuxieme tableau avec l'index 1
+         */
+         let tab1 =["nom " , "prenom  " , "téléphone : "] ;
+         let tab2 =[" NAJJAHI, ", " Imane, " , "07666666.  " ] ;
+       
+
+         let tab = [tab1, tab2];
+
+                
+         document.write(tab[0][0] + " : " + tab[1][0] + ", " + tab[0][1] + " : " + tab[1][1] + " : " + tab[0][2] + tab[1][2] );    
+         
+         document.write("<br>")
+
+         let coordonees = [
+            //   0
+                    [
+                        "nom", //0
+                        "telephone", //1
+                        "prenom", //2
+                    ],
+             // 1
+                    [
+                        "Sahar", //0
+                        "Ferchichi", //1
+                        "0755555555" //2
+                    ]
+         ]
+         document.write(`${coordonees [0] [0]} : ${coordonees [1] [1]} ,  ${coordonees [0] [2]} ${coordonees [1] [0]} : ${coordonees [0] [1]} :  ${coordonees [1] [2]}.`);
+
+        //////////////--------------
+        //-  Tableaux associatif
+        //////////////////----------
+        // declarer un tableau associatif
+
+        let informations = {
+            prenom : "Anas",
+            nom : "Najjahi",
+            age : 80,
+            tel : 755555555,
+        };
+        console.table(informations);
+        console.log(informations["age"]);
+        console.log(informations.age);
+
+        
+        //////////////--------------
+        //-  Tableaux associatif multidimensionnel
+        //////////////////----------
+        
+        let contact = {
+           
+            contact1 : {
+                prenom : "semir",
+                nom : "Sarajlic",
+                tel : "12121212"
+            },
+            contact2 : {
+                prenom : "adama",
+                nom : "Cissoko",
+                tel : "14141414"
+            },
+            contact3 : {
+                prenom : "Paul",
+                nom : "Pierrard",
+                tel : "1515151515"
+            },
+            contact4 : {
+                prenom : "Cleid",
+                nom : "Manigat",
+                tel : "16161616"
+            }
+        }
+        document.write("<br>");
+        // semir sarajlec 12121212
+        document.write(contact.contact1.prenom + "  " + contact.contact1.nom + "  " + contact.contact1.tel);
+        document.write("<br>");
+        // adama cissko 1414141414
+        document.write(contact.contact2.prenom + "  " + contact.contact2.nom + "  " + contact.contact2.tel);
+        document.write("<br>");
+        // paul Pierrard 15151515
+        document.write(contact.contact3.prenom + "  " + contact.contact3.nom + "  " + contact.contact3.tel);
+        document.write("<br>");
+        // Cleid manigat 15151515
+        document.write(`<br> ${contact.contact4.prenom} ${contact.contact4.nom} ${contact.contact4.tel} <br>`);
 
 
+        let contact1 = [
+           
+           {
+               prenom : "semir",
+               nom : "Sarajlic",
+               tel : "12121212"
+           },
+            {
+               prenom : "adama",
+               nom : "Cissoko",
+               tel : "14141414"
+           },
+          ];
+        
+          document.write(contact1[0]["prenom"] + " " + contact1[0]["nom"]+ " " + contact1[0]["telnom"])
+          document.write("<br>");
+          document.write(contact1[1].prenom + " " + contact1[1].nom+ " " + contact1[1].tel)
+          document.write("<br>");
 
+          // tableau avec 4 dimensions
+          let array4Dimensions = [
+            // 0
+            {
+                prenom : "zineb",
+                nom :"zahidi",
+                coordonnees: {
+                    email : "zineb.zahidi@gmail.com",
+                    tel : {
+                        fix : 999999999,
+                        fax : 777777777,
+                        port : {
+                            prive :888888888,
+                            pro : 666666666,
+                        }
+                    },
+                    adresse : {
+                        ville: "Evry",
+                        cp : 91000,
+                        pays : {
+                            code : "FR",
+                            nom : "France"
+                        }
+                    },
+                    mdp : [
+                        "3333333333",
+                        "22222222222"
+                    ]
 
+               }   
+           }
+       ]
 
+       // on doit afficher 
+      
+       // email
+       // fax
+       // prive
+       // code
+
+         // email 
+                document.write(` ${array4Dimensions[0]["coordonnees"]["email"]} <br>`);
+                document.write(` ${array4Dimensions[0].coordonnees.email} <br> `);
+        // fax
+                 document.write(` ${array4Dimensions[0]["coordonnees"]["tel"]["fax"]} <br> `);
+                 document.write(` ${array4Dimensions[0].coordonnees.tel.fax} <br> `);
+        // prive
+                document.write(` ${array4Dimensions[0]["coordonnees"]["tel"]["port"]["prive"]} <br> `);
+                 document.write(` ${array4Dimensions[0].coordonnees.tel.port.prive} <br> `);
+
+        // code
+                 document.write(` ${array4Dimensions[0]["coordonnees"]["adresse"]["pays"]["code"]} <br> `);
+                 document.write(` ${array4Dimensions[0].coordonnees.adresse.pays.code} <br> `);
+
+        // mdp
+                document.write(` ${array4Dimensions[0].coordonnees.mdp[1]} <br> `);
+    //METHODE 2
+            document.write(array4Dimensions[0].coordonnees.email + "<br>", array4Dimensions[0].coordonnees.tel.fax + "<br>", array4Dimensions[0].coordonnees.tel.port.prive + "<br>", array4Dimensions[0].coordonnees.adresse.pays.code)
+            document.write("<br>");
+
+       //----------------------------------------------
+        //Les propriétes et les méthodes des tableaux
+        //--------------------------------------------
+
+            let couleurs = ["Rose", "Rouge","Noir", "Bleu"];
+            console.log(couleurs.length); //length est une propriete qui permet d'afficher le nombre d'eleme,ts que contient mon tableau
+            // je stock la valeur dans une variable 
+            let longueurTableau = couleurs.length;
+            console.log(longueurTableau);
+
+           //----------------------------------------------
+        // Ajouter un ou plusieurs éléments en fin de mon tableau
+        //-------------
+           couleurs.push("Violet")
+           console.log(couleurs);
+           console.log(couleurs.length);
+       
+           //----------------------------------------------
+        // Supprimer le dernier élément de mon tableau
+        //-------------
+            couleurs.pop();
+            console.log(couleurs);
+            console.log(couleurs.length);
+            
+           //----------------------------------------------
+        // Ajouter un ou plusieurs éléments au debut de mon tableau
+        //-------------
+            couleurs.unshift("Vert","Orange");
+            console.log(couleurs);
+            console.log(couleurs.length);
+
+             //----------------------------------------------
+        // Ajouter, supprimer ou remplacer des éléments n'importe dans mon tableau
+        //-------------
+        // La méthode splice() va prendre trois arguments :
+        // - une position de départ : à partir d'où commence le changement
+        // - le nombre d'éléments à remplacer ou à enlever
+        // - Les éléments à ajouter au tableau
+       //couleurs.splice(1,1); il remplace mais supprime
+            couleurs.splice(1,0,"Jaune","Blanc");  //couleurs.splice(1,1); il remplace mais supprime
+            console.log(couleurs);
+            console.log(couleurs.length);
+        
+           /*
+            Pour découper un tableau et en créer un autre, j'utilise la méthode slice()
+            // premier argument : La position de départ : où doit commencer la découpe de notre tableau de départ/ si la position passée est un nombre négatif -> le début de la découpe sera calculé à partir de la fin du tableau de départ/ si aucune position de départ n'est passée, la découpe commencera depuis le début du tableau de départ.
+            // Deuxième argument : la position où doit s'arrêter la découpe du tableau de départ/ si la position passée est un nombre négatif, alors la fin de la découpe sera calculée à partir de la fin du tableau de départ / si aucune position de fin n'est passée, alors on récupérera le tableau de départ jusqu'à la fin pour créer notre nouveau tableau
+        */
+            let joursSemaine = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
+            let joursTravailSahar = joursSemaine.slice(0,5); // le nouveau tableau crée ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"];
+            // console.log(joursTravailSahar);
+            // console.log(joursSemaine);
+            // let joursSemaineColombbus = ["Lundi", "Mardi", "Jeudi", "Vendredi"];
+            let joursSemaineColombbus = joursTravailSahar;
+            joursTravailSahar.splice(2,1);
+            console.log(joursSemaineColombbus);
+
+            //pour retourner une chaine de caractere en concatenant les differentes vaveurs d'un tableau
+
+            let concatJourSemaine = joursSemaine.join(' - ' );
+            document.write(concatJourSemaine);
+
+            //pour determiner si un tableau contient une valeur précise
+           
+            let verif = joursSemaine.includes('Jeudi'); //ATTENTION le méthode includes est sensible à la casse      
+            console.log(verif);
+            console.log(typeof verif);
+
+            //pour fusionner plusieurs tableaux entre eux et en créer un nouveau
+
+            let totalTableau = joursSemaine.concat(couleurs,myArray,myArray2)
+            document.write(totalTableau);
+            console.log(totalTableau)
 
     </SCript>
     
