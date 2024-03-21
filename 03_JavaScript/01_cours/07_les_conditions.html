@@ -56,7 +56,7 @@
         */
 
         // Opérateur AND : il evalue le résultat en TRUE si les expressions sont TRUE, si l'une des deux expressions testé est FALSE alors le résultat sera FALSE
-        document.write(br);
+        
         document.write(true && true); // true
         document.write(br);
         document.write(true && false); // false
@@ -100,7 +100,6 @@
 
             /* le code si la condition est VRAIE */
         }
-
 
         //----------------------------------------------------------------------------------------
 
@@ -173,6 +172,189 @@
         else {
             document.write("Vous êtes QUI ?");
         }
+
+        let a = 10 , b = 5 , c = 2 ;
+         
+        if (a > b) {
+            document.write(br);
+            document.write(" a est bien supperieur à b");
+        }
+        else {
+            document.write(br);
+            document.write(" a est inferieur à b");
+        }
+        //----------------------------------------------------
+        if (a > b && b > c) { // true && false => false
+            document.write(br);
+            document.write(" Ok pour les deux conditions");
+
+        }
+        else {
+            document.write(br);
+            document.write(" Une de ces deux conditions est fausse"); 
+        }
+        //----------------------------------------------------
+        if(a == 9 || b < 9) { // false || true => true
+            document.write(br);
+            document.write(" Ok pour au moins une de ces deux conditions"); 
+
+        }
+        else {
+            
+            document.write(" les deux conditions sont fausses"); 
+        }
+        //----------------------------------------------------
+        document.write(br);
+        if(a == 8) { // false
+            document.write(" a est egale à 8 "); 
+        }
+        
+        else if ( a !== 8) { // false
+            document.write(" a est différent de 8"); 
+        }
+       
+        else {
+            document.write(" tout le monde est faux"); 
+
+        }
+
+        // avec que des if les conditions sont toutes exécutés et dés que l'une des conditions est vraie le resultat est affiché
+        document.write(br);
+
+
+
+        if (a==10) {
+            document.write(" a est egale à 10 "); 
+
+        }
+        if (a < b ) {
+            document.write(" a est supérieur à b <br> "); 
+        }
+
+        if (a < b ) {
+            document.write(" a est inferieur à b <br> "); 
+        }
+        document.write(br);
+        document.write("<h3>la condition ternaire</h3>") 
+
+        //----------------------------------------------------------------------------
+        // la condition ternaire nous permet de faire une vérification mais sur une seule ligne
+
+        let meteo = "pluie";
+        if ( meteo == "pluie") {
+            document.write(" Prends un parapluie <br>") 
+        }
+        else  {
+            document.write(" mets un short <br>"); 
+        }
+        
+        (meteo == "pluie") ? document.write(" Prends un parapluie <br>") :  document.write(" Mets un short <br>"); 
+
+        // Est ce que méteo est égale à pluie ? si oui, prends un parapluie, sinon : mets un short
+        // let ternaire =  (meteo == "pluie") ? " Prends un parapluie <br>":  " Mets un short <br>"; 
+        // document.write(ternaire);
+
+
+        let monAge = 15 ;
+        (monAge >=18) ? document.write(" Vous êtes majeur <br>") :  document.write(" vous êtes mineur <br>")  ; 
+
+        let ternaire =(monAge >=18) ? (" Vous êtes majeur <br>") : (" vous êtes mineur <br>"); 
+        document.write(ternaire) ;
+
+        // let monAge = prompt("Entrez votre âge !")..toLowerCase();
+        // document.write(( monAge >= 18) ? " Vous êtes majeur <br>" : " Vous êtes mineur <br>");
+
+        // la condition switch 
+        // document.write("<h3>la condition switch</h3>") ;
+        // let valeur = 5 + 10
+        // switch (valeur) {
+        //     case 5:
+        //         document.write("la valeur est égale à 5 <br> ")
+        //         break;
+        //     case 10:
+        //         document.write("la valeur est égale à 10 <br> ")
+        //         break;
+        //     case 15:
+        //         document.write("la valeur est égale à 15 <br> ")
+        //         break;
+        //     default :
+        //          document.write("la valeur est indétérminée <br> ")
+        //         break;
+        // }
+       
+        // let jour = prompt("Entrez un jour de la semaine  !").toLowerCase();
+        // console.log(jour);
+
+        // switch (jour) {
+        //     case "Lundi":
+        //         document.write("Mardi <br> ")
+        //         break;
+        //     case "Mardi":
+        //         document.write("Mercredi <br> ")
+        //         break;
+        //     case "Mercredi":
+        //         document.write("Jeudi <br> ")
+        //         break;
+        //     case "Jeudi":
+        //         document.write("Vendredi <br> ")
+        //         break;
+        //     case "Vendredi ":
+        //         document.write("Samedi <br> ")
+        //         break;
+        //     default :
+        //          document.write("Dimanche <br> ")
+        //     break;
+        //  }
+         let jour = "Mercredi";
+
+        switch (jour) {
+            case "Lundi":
+                document.write(" Mardi <br>")
+                break;
+            case "Mardi":
+                document.write("Mercredi <br>")
+                break;
+            case "Mercredi":
+                document.write("Jeudi <br>")
+                break;
+            case "Jeudi":
+                document.write("Vendredi <br>")
+                break;
+            case "Vendredi":
+                document.write("Samedi <br>")
+                break;
+
+            default:
+                document.write("Dimanche <br>")
+                break;
+        }
+      
+        
+        if (jour == "Lundi") {
+            document.write("Mardi")
+        }
+        else if (jour =="Mardi") {
+            document.write("Mercredi <br> ")
+        }
+        else if (jour =="Mercredi") {
+            document.write("Jeudi <br> ")
+        }
+        else if (jour =="Jeudi") {
+            document.write("Vendredi <br> ")    
+        }
+        else if (jour =="Vendredi") {
+
+            document.write("Samedi <br> ") 
+        }
+        else if (jour =="Samedi") {
+
+        document.write("Dimanche <br> ") 
+        }
+        else {
+            document.write("Fini le week-end <br> ")  
+        }    
+        
+
 
     </script>
 
