@@ -74,9 +74,9 @@
             Afficher en utilisant une boucle les noms et prénoms associés dans un document write
         
         */
-            let tab1 =["NAJJAHI" , "FERCHICHI" , "SARAJLEC ", "PIERRARD ", "CISSIKO "]; // éllément tab1.lenght=5
-            let tab2 =["imane" , "sahar ", "semir "," paul ", "adama "];
-            let tab3 =[42 , 34 , 36 , 21 , 25 ];
+            // let tab1 =["NAJJAHI" , "FERCHICHI" , "SARAJLEC ", "PIERRARD ", "CISSIKO " , "<br>"]; // éllément tab1.lenght=5
+            // let tab2 =[" imane  " , " sahar ", " semir "," paul ", " adama "];
+            // let tab3 =[ 42 , 34 , 36 , 21 , 25 ];
             // for (s = 0; s< 5;s++) { // 
             // document.write(tab1[s]+" "+ tab2[s]+"  " +" "+ tab3[s]+"<br>");
             // for (let s=0; s< tab1.length ; s++) {
@@ -84,19 +84,16 @@
 
             // }
             //deuxieme façon de faire
-            let tab4 = [tab1, tab2, tab3];
-            
+            // let tab4 = [tab1, tab2, tab3];            
 
-            for (let m = 0 ; m < tab4[0].length ; m++) {
+            // for (let m = 0 ; m < tab4[0].length ; m++) {
 
-                document.write(`${tab4[0][m]} ${tab4[1][m]} ${tab4[2][m]}`);  
-            }
+            //     document.write(`${tab4[0][m]} ${tab4[1][m]} ${tab4[2][m]}`);  
+            // }
            
             // document.write(tab4[0][k] + tab4[1][k] + tab4[2][k]);
             
      
-
-
         // Exercice 6
 
         /*
@@ -120,17 +117,15 @@
             else if (k <= 10) {
 
             // document.write(`tour numéro ${k} <br>`)
-                document.write(" tour numéro " + k +  "<br>")
+                document.write(" tour numéro " + k +  "<br>");
             }
             else {
-                document.write("le manége s'arrete <br>")
+                document.write("le manége s'arrete <br>");
             }
            
            }  
-           //deuxieme façon de faire
-           
-
-                 
+           //deuxieme façon de faire             
+                
         //     for (let i = 0 ; i < jours.length ; i++) { // 
         //     document.write(`<p>${jours[i]})</p>`)
         //    }
@@ -148,39 +143,62 @@
                 Si ce n'est pas un nombre :
                     =>afficher  "Vous n\avez pas saisi de nombre !"   
         */
-
-    
-       let moyenne = prompt(parseFloat(moyenne));
-       
-            document.write(typeof(moyenne));   
+     // correction Exercice 7 
+    //    let i = prompt("Entrez votre moyenne ! ");               
             
-        if (i ==isNaN(moyenne)) {
+    //    if (i >= 0 && i < 10 ) {
 
-            document.write(" ceci n'est pas un nombre, veullez saisir un nombre ! ")     
-                  
-        }else if (i <= 0 && i < 10 ) {
+    //         document.write(" tu es recalé ! ");
 
-            document.write(" tu es recalé ! ")
+    //     } else if( i >= 10 && i <= 11 ) {
 
-        } else if( i >= 10 && i <11 ) {
-
-            document.write(" tu passes sans mention ! ")
+    //         document.write(" tu passes sans mention ! ");
         
        
-        } else if( i >= 12 && i <20 ) {
+    //     } else if( i >= 12 && i <= 20 ) {
 
-            document.write(" reçu avec mention ! ")
+    //         document.write(" reçu avec mention ! ");
 
+    //     } else if( i <0  || i  > 20 ) {
+
+    //         document.write(" la moyenne doit etre comprise entre 0 et 20  ! ");
+    //     }
+
+    //    else  {
+
+    //         document.write("Vous n\avez pas saisi de nombre !");
+
+    //    }
+   // 2 eme methode correction exercice 7
+   let i = prompt("Entrez votre moyenne ! ");  
+   if (!isNaN(i)) { // si c est un nombre
+      
+            
+        if (i >= 0 && i < 10 ) {
+     
+                 document.write(" tu es recalé ! ");
+     
+        } else if( i >= 10 && i <= 11 ) {
+     
+                 document.write(" tu passes sans mention ! ");
+             
+            
+        } else if( i >= 12 && i <= 20 ) {
+     
+                 document.write(" reçu avec mention ! ");
+     
         } else if( i <0  || i  > 20 ) {
+     
+                 document.write(" la moyenne doit etre comprise entre 0 et 20  ! ");
+             }
+     
+        else  {
+     
+                 document.write("Vous n\avez pas saisi de nombre !");
+            } 
+        }    
 
-            document.write(" la moyenne doit etre comprise entre 0 et 20  ! ")
-        }
 
-       else  {
-
-            document.write("Vous n\avez pas saisi de nombre !")
-
-}
            // Exercice 8
         /* 
             Créer un script qui permet de :
@@ -195,64 +213,68 @@
 
             créer un script JavaScript qui demande à l'utilisateur de saisir un nombre. Le script vérifiera d'abord si le nombre est différent de zéro et s'il est positif. Ensuite, il affichera sur la page web si ce nombre est pair ou impair, ainsi que pour les neuf nombres suivants jusqu'à 10. 
         */
-        let nbr = nbr1(parseFloat(nbr));
-        let nbr1 = prompt("veuiller entrer un nombre ! ") 
-            document.write(typeof(nbr1));    
-      
-        for ( i = 0 ; i > 0 ; i++ )
+           // correction Exercice 8
         
-        if ( i == i.NaN) {
-            document.write("vous n'avez pas saisi de nombre")
-           
+         let nbr1 = prompt("veuiller entrer un nombre ! ");
+         document.write(typeof(nbr1));    
+      
+       
+        
+        if ( i == i.isNaN) {
+         document.write("vous n'avez pas saisi de nombre");            
         } 
         
-        else if ( i > 0  || i % 2 == 0 ) {
+        else if ( i > 0  && i % 2 == 0 ) {
 
-            document.write("Le nombre est pair")
+             document.write("Le nombre est pair");
+
             
-        } else {
-            document.write("Le nombre est impair")
-        }
-   
-    //Exercice 9
+         } else {
+             document.write("Le nombre est impair");
 
-        // Ecrivez un programme qui fait jouer l'utilisateur au "ni oui, ni non" : il entre un texte jusqu'à saisir "oui" ou "non", ce qui déclenche la fin du jeu. ( Utilisez la boucle while)
-        let j = !oui ; 
-                while ( j != oui && j != non) 
+         }
+        
+    /////Exercice 9
+
+    //     // Ecrivez un programme qui fait jouer l'utilisateur au "ni oui, ni non" : il entre un texte jusqu'à saisir "oui" ou "non", ce qui déclenche la fin du jeu. ( Utilisez la boucle while)
+        
+    //         // correction Exercice 9
+    //     let j = "!oui" ; 
+    //             while ( j != oui && j != non) 
                        
-        if ( n !== oui || n !== non) {
-            document.write(` ${n} / `) 
-            n++ 
-        }
-        else {
+    //     if ( n !== oui || n !== non) {
+    //         document.write(` ${j} / `) ;
+    //         n++ 
+    //     }
+    //     else {
             
-            document.write("Fin du jeu")
+    //         document.write("Fin du jeu");
            
-        }
-            ///Exercice 10
+    //     }
+    ////Exercice 10
 
-        /* 
-            Écrivez un programme qui affiche tous les nombres entre 1 et 20 avec les exceptions suivantes :
-            il affiche "Grala" à la place du nombre si celui-ci est divisible par 3.
-            Il affiche "Bu" à la place du nombre si celui-ci est divisible par 5 et non par 3.
-            il affiche "Gralabu" à la place des nombres divisibles à la fois par 3 et par 5.
-        */
+    //     /* 
+    //         Écrivez un programme qui affiche tous les nombres entre 1 et 20 avec les exceptions suivantes :
+    //         il affiche "Grala" à la place du nombre si celui-ci est divisible par 3.
+    //         Il affiche "Bu" à la place du nombre si celui-ci est divisible par 5 et non par 3.
+    //         il affiche "Gralabu" à la place des nombres divisibles à la fois par 3 et par 5.
+    //     */
+    ///// correction Exercice 10
+    //    
+    //    
+    //     for (let i =0; i < 20; i++) {
+    //     if (i%3 == 0 && i%5 !==0  ) {
+    //         document.write("Grala");
+    //    } 
+    //    else if (i%5 == 0 && i%3 !== 0  )  {
 
-        i = prompt("veuillez entrer un nombre !")
-        i = prompt("veuillez entrer un nombre !")
-        for (let i =0; i < 20; i++) {
-        if (i%3 == 0  ) {
-            document.write("Grala")
-       } 
-       else if (i%5 == 0  )  {
+    //         document.write("Bu");
+    //    }
+    //    else if (i%3 ==0 && i%5 ==0  ) {
 
-            document.write("Bu")
-       }
-       else if (i%3 ==0 && i%5 ==0  ) {
-
-        document.write("GralabuBu")
-        }
-        }   
+    //     document.write("GralabuBu");
+    //     }
+    //     }   
        
     </script>
     
