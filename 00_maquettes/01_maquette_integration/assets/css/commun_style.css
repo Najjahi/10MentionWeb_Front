@@ -24,7 +24,6 @@ h2 {
     font-family: Verdana, 'Geneva', Tahoma, sans-serif;
 }
 
-
 /************************************ HEADER ********************************* */
 header {
     /* Dans le header j'applique le display avec la valeur flex afin de gérer l'emplacement de mes éléments sur l'axe principale (axe horizontale) et l'axe  secondaire (axe verticale)  */

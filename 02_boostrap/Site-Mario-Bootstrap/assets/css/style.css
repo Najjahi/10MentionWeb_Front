@@ -11,3 +11,10 @@ h1 {
 img {
     width: 100%;
 }
+*{
+    box-sizing: border-box;
+}
+table[class*=col-lg-6] {
+ /* est une selecteur css qui cible tous les éléments qui ont une classe contenant le texte "col" */
+    width: 50%;
+}

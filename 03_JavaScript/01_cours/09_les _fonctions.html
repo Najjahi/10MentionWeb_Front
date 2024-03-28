@@ -117,12 +117,11 @@
 
             Attention : Vérifier si l'utilisateur a bien saisi le prénom et le nom, que le prénom est bien une chaîne de caractères et l'âge est bien un nombre entier.
         */
-                
+            function hello(){
 
-        function hello(){
             let firstName = prompt("Quel est votre prenom ? ");
 
-            if (isNaN(firstName) &&  firstName != null && firstName != " ") {
+            if (isNaN(firstName)) { //null aucune reponse  &&  firstName != null && firstName != " "
 
                 let birth = prompt(`Bonjour ${firstName} , quel âge as-tu ? `);
 
@@ -131,6 +130,7 @@
                     let date = new Date(); // Date() permet de créer une instance qui représente un moment précis dans le temps.
                
                     let anneeDeNaissance = date.getFullYear() - birth; // getFullYear = retourne l'année entière (méthode js)
+                   
                     confirm(`Vous êtes né en ${anneeDeNaissance}`);
 
                     document.write(` Bonjour ${firstName} tu as ${birth} ans et tu es né en ${ anneeDeNaissance}`);
