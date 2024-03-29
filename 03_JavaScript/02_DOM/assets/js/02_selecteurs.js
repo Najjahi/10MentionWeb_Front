@@ -60,7 +60,7 @@ aChanger[0].innerHTML = "<em> ceci est le titre modifié avec Javascript</em>";
     
 // }
 
-// trisieme facon
+// troisieme facon
 
 // Boucle for of : je déclare une variable p qui représente chaque élément dans le tableau lesP, au niveau de l'instruction à exécuter j'appelle la variable p en lui attribuant le style souhaité avec la propriété style.
 
@@ -114,6 +114,93 @@ nouveauParaFin.style.color ="red"
 
 section.append(nouveauParaFin); // append() ->insére du contenu à la fin de la section. // append() accepte tous les éléments (balise ou string)
 
+let nouveauParaDebut = document.createElement('p');
+nouveauParaDebut.innerHTML = "<strong> Coucou, je suis ton nouveau paragraphe au debut de la section </strong> ";
+nouveauParaDebut.style.color = "green";
+
+section.prepend(nouveauParaDebut); // prepend ()-> insére du contenu au debut de la selection
+
+// DEPLACER UN ELEMENT 
+
+// Pour déplacer un élément, il faut 3 paramétres 
+/**
+ * -> le parent qui va accueillir l'élément
+ * -> l'élément à déplacer 
+ * -> l'élément qui vient après
+ 
+ */
+
+let parent = document.querySelector('main');
+let jeBouge = document.querySelector('h4');
+let h2 = document.querySelector('h2');
+
+parent.insertBefore(jeBouge, h2);
+
+// SUPPRIMER UN ELEMENT
+
+//pour supprimer un élément, il faut deux paramétres :
+/**
+ * le parent
+ * l'element à supprimer
+ 
+ */
+let ul = document.querySelector('ul');
+
+let li = document.querySelector('ul :nth-child(2')
+
+// let li = document.getElementsByTagName('li')[1];
+
+console.log(li);
+
+// pour supprimer, on utilise .removeChild()
+ul.removeChild(li);
+
+// CREER UN ATTRIBUT ET SA VALEUR
+
+// setAttribute() : méthode pour ajouter un nouvel attribut ou changer la valeur d'un attribut existant pour un élément
+
+let baliseA = document.querySelector('a');
+
+baliseA.setAttribute("attribut", "valeurAttribute"); // je rajoute un attribut à la balise
+
+baliseA.setAttribute("href", "01_introduction.html");// CHANGER LA VALEUR DE L'attribut href
+
+let lesA = document.querySelectorAll('a');
+console.log(lesA);
+
+let valeurA = lesA[3].getAttribute('href'); // ici je récupére la valeur de l'attribut href avec le getAttribute()
+console.log(valeurA);
+
+// Grâce à votre script, créez une balise a dans la balise h1 avec le lien vers la documentation JS () qui s'affiche sur un nouvel onglet.
+// Ce lien sera de couleur blanche et non souligné.
+
+// 1 ere façon
+
+   let container = document.querySelector('h1');
+// let element = document.createElement('a');
+// element.setAttribute('href', 'https://developer.mozilla.org/fr/');
+// element.setAttribute('target', '_blank');
+// element.style.color ="white";
+// element.style.textDecoration ="none";
+// element.innerText = "cours JS";
+// element.innerText = "";
+// container.append(element)
+// console.log(element);
+
+// 2 eme façon
+
+// container. innerHTML = "<a> Cours JAVAscript </a>";
+// let element = document.querySelector('h1 a')
+// element.setAttribute('href', 'https://developer.mozilla.org/fr/');
+// element.setAttribute('target', '_blank');
+// element.style.color ="white";
+// element.style.textDecoration ="none";
+
+// 3 eme façcon
+container.innerHTML = "<a href = 'https://developer.mozilla.org/fr/' target='_blank' > Cours JAVAscript </a>";
+let element = document.querySelector('h1 a');
+element.style.color = "white";
+element.style.textDecoration ="none";
 
 
 
