@@ -1,0 +1,21 @@
+*{
+    text-decoration: none !important;
+}
+nav div a {
+    margin-left: 3rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+
+main div {
+    margin-top: 5rem;
+}
+
+.img1,.img2 {
+    width: 700px;
+}
+.img3 {
+    border-radius: 50%;
+    width: 25px;
+}
