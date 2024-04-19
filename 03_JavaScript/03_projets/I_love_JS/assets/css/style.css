@@ -277,7 +277,16 @@ to {
 
 }
 
-/*************keydown*****************/
+/*************keybord*****************/
+.mario {
+    position: relative;
+  
+
+}
+#mario {
+    position: absolute;
+    left: 30px;
+}
 
 
 
