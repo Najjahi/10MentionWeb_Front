@@ -180,5 +180,5 @@ automatic.addEventListener('click', ()=>{
 
 let Loader = document.querySelector('#loader');
 window.addEventListener('load',()=>{
-    Loader.classList.add('hideloader');
+    Loader.classList.add('hideLoader');
 })

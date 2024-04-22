@@ -240,7 +240,7 @@ h1 {
     animation-iteration-count: infinite;/*l'animation se répéte à l'infini*/
     animation-timing-function: linear;/*,la progréssion de l'animation pendant la durée de chaque cycle*/
 }
-.hideloader {
+.hideLoader {
     display: none !important;
 }
 
@@ -288,7 +288,75 @@ to {
     left: 30px;
 }
 
+/**************** formulaire *****************/
+.container {
+    width: 50%;
+}
+.header {
+    background-color: #1e2337;
+    border-bottom: 1px solid #fff;
+    padding: 2rem 4rem;
+}
 
+form {
+    padding: 3rem 4rem;
+}
+.form-control {
+    border: 2px solid #1E2337;
+    padding-bottom: 2rem !important;
+    margin-bottom: 2rem !important;
+    font-size: 1.4rem;
+    position: relative;
+}
+.form-control i:not(.fa-eye-slash, .fa-question, .fa-eye) {
+    position:absolute;
+    top: 45px;
+    right: 15px;
+    visibility: hidden;
+}
+
+.form-control label {
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+    
+}
+.form-control input {
+    border: 2px solid #cbe6ff;
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    padding-left: 1rem;
+}
+
+.form-control .fa-question {
+    background-color: #cbe6ff;
+    font-size: 1rem;
+    padding: .2rem;
+}
+
+.mdp p {
+    border: 1px solid #CBE6FF;
+    width: 120px;
+    font-size: .8rem;
+    background-color: #cbe6ff;
+    padding: .4rem;
+    position: absolute;
+    bottom: 50px;
+    left: 105px;
+    display: none;
+}
+button {
+    background-color: #61b3ff;
+    border:2px solid #1E2337 ;
+    color: #fff;  
+    padding: 10px;
+    font-size: 1.6rem;
+    width: 100%;
+}
+.show {
+    display: block !important;
+}
 
 
 /**************** footer *****************/

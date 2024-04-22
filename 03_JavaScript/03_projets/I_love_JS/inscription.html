@@ -26,8 +26,7 @@
             <nav class="navbar-desktop d-flex justify-content-center align-items-center">
                 <a href="index.html">Accueil</a>
                 <a href="services.html">Services</a>
-                <a href="#">A propos</a>
-                <a href="#">Contact</a>
+                <a href="inscription">Inscription</a>
                 <div class="switch">
                     <!-- Icone du soleil -->
                     <i class="bi bi-sun-fill"></i>
@@ -36,10 +35,56 @@
             </nav>
         </header>
         <main>
-            <div class="container-fluid d-flex flex-column align-items-center vh-100  ">
-        
-          
+            <div class="container-fluid d-flex flex-column align-items-center ">
+                <div class="container my ">
+                    <div class="header">
+                        <h2 class="text-center fst-italic fs-1 text-white  "> Créez un compte</h2>
+                    </div>
+                    <!-- form>div.form-control*4+button -->
+                    <form action="#" method="post" autocomplete="off" class="bg-white" id="form">
+                        <div class="form-control">
+                            <label for="username"> Nom d'utilisateur</label>
+                            <input type="text" name="username" id="username" placeholder="John">
+                            <i class="fa-solid fa-exclamation"></i>
+                            <i class="fa-solid fa-circle-check"></i>
+                         </div>
+                        
+                         <div class="form-control">
+                            <label for="email"> Email</label>
+                            <input type="email" name="email" id="email" placeholder="John@gmail.com">
+                            <i class="fa-solid fa-exclamation"></i>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        
+                        <div class="form-control">
+                            <!-- div>div>label -->
+                            <div class="d-flex justify-content-between align-items-center ">
 
+                                <div class="mdp">
+                                    <label for="password">Mot de passe</label>
+                                    <i class="fa-solid fa-question"></i>
+                                    <p> Au moins un chiffre, un caractère spécial ( !@#$%^&* ),lettres minuscules et majuscules et  la longueur du mot de passe doit être comprise entre 8 et 12 caractères.</p>
+                                    
+                                </div>
+                                <!-- <i class="fa-solid fa-eye"></i> -->
+                                <i class="fa-solid fa-eye-slash"></i>
+                            </div>
+                            <input type="password" name="password" id="password">
+                            <i class="fa-solid fa-exclamation"></i>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div class="form-control">
+                            <label for="password2"> Confirmation du mot de passe</label>
+                            <input type="password" id="password2">
+                            <i class="fa-solid fa-exclamation"></i>
+                            <i class="fa-solid fa-circle-check"></i>
+                            
+                        </div>
+                        <button type="submit"><i class="fa-solid fa-user-plus"></i>S'inscrire</button>
+                    </form>
+
+                </div>
+        
         </main>
         <footer>
             <!-- place footer here -->
@@ -95,13 +140,16 @@
     </div>
 
         <!-- Bootstrap JavaScript Libraries -->
+        
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
             crossorigin="anonymous"></script>
-
+<!-- script fontawesome -->
+<script src="https://kit.fontawesome.com/3fc7a9accd.js" crossorigin="anonymous"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"></script>
-        <script src="assets/js/contact.js"></script>
+            <!-- script perso -->
+        <script src="assets/js/inscription.js"></script>
     </body>
 </html>
