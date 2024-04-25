@@ -14,38 +14,44 @@
         </head>
     
         <body>
-            <div class=" px-5 pt-5 ">
-            <header>
+            <div class=" container mt-5 ">
+            <header class="row">
                 
                 <!-- place navbar here -->
-                <nav class="d-flex justify-content-evenly   ">
-                    <div><a href=""><img src="assets/img/logo.svg" alt=""></a></div>
-                <div >
+                <nav class="d-flex justify-content-between">
+                <a class="col-2" href=""><img src="assets/img/logo.svg" ></a>
+               
+                <div>
                     <a href=""> Features </a>
-                    <a href=""> Team </a>
+                    <a class="mx-3" href=""> Team </a>
                     <a href=""> Sign up</a>
                 </div>
                 </nav>
             </header>
             <main>
-                <div class=" container-fluid d-flex text-center  ">
-                    <div class="d-flex flex-column col-sm-12 pe-5 ">
-                        <div> <a href=""><img src="assets/img/illustration-1.svg" class="img1 " alt=""></a></div>
-                    
-                            <h2>All your files in one secure location, accessible anywhere</h2>
-                            
-                            <p>Fylo stores you most important files in one secure location. Access them wherever you nees, share and collaborate with friends, family, and co-workers.</p>
-                    <form>
-                        <div class="mb-3  d-flex flex-wrap col-sm-12">
-                          <input type="email" class="form-control col-6" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder ="johnappleseed@mail.com">
-                                                    
-                          <button type="submit" class="btn btn-primary col-6 "> Get Started </button>
-                        
-                          <small class="text-danger col-12"> please check your email</small>
-                        
+                <div class=" container d-flex flex-wrap  text-center">
+                    <div class="d-flex flex-column col-sm-12 ">
+                        <div>
+                        <div class="col-xxl-5">
+                            <!-- la premiere illustration -->
+                            <img src="assets/img/illustration-1.svg" class="img1 w-100 " alt="">
                         </div>
                         
-                      </form>
+                        <h2>All your files in one secure location, accessible anywhere</h2>
+                        
+                        <p>Fylo stores you most important files in one secure location. Access them wherever you nees, share and collaborate with friends, family, and co-workers.</p>
+                       
+                            <div class="mb-3  d-flex flex-wrap col-sm-6">
+                                <form>
+                                    <input type="email" class="form-control col-6" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder ="johnappleseed@mail.com">
+                                    <small class="text-danger col-12"> please check your email</small>
+                                                                
+                                    <button type="submit" class="btn btn-primary col-6 "> Get Started </button>
+                                    
+                                </form>
+                            
+                            </div>
+                        </div>       
                     </div> 
                    
                 </div>
@@ -53,26 +59,28 @@
                 <div class="d-flex text-center ">
                     <div class="d-flex flex-column">
                         <div>
-                            <a href=""><img src="assets/img/illustration-2.svg" class="img2" alt=""></a>
+                            <!-- la deuxieme illustration -->
+                            <img src="assets/img/illustration-2.svg" class=" w-100 " alt="">
                         </div>
                         <h2>Stay productive, wherever you are</h2>
                         <p>Never let location be an issue when accessiong your files. Fylo has you covered for all of file strorage needs. Securely share files and folders with friends, family and colleagues for live collaboration. No email attachements required!</p>
                             
-                            <p class="text-info text-decoration-underline ">See how Fylo works <a href=""><img src="assets/img/icon-arrow.svg" class="" alt=""></a></p>
-                                                       
-                            <a href=""><img src="assets/img/icon-quotes.svg" alt=""></a>
+                            <p class="text-info text-decoration-underline ">See how Fylo works <img src="assets/img/icon-arrow.svg" class="icon1" alt=""></p>
+                            
+                            
+                             <!-- icone double quotes -->                          
+                            <img src="assets/img/icon-quotes.svg" class="icon2" alt="">
 
                             <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has becom a well-oiled collaboration machine.</p>
 
                            <div class="d-flex ">
-                                <a href=""><img src="assets/img/avatar-testimonial.jpg" class="img3 mx-5 "></a>
-                                <p> <pre><strong>Kyle Burton</strong>     
-Founder & CEO, Huddle </pre>
-                                    </p>
+                                <img src="assets/img/avatar-testimonial.jpg" class="img3 mx-5 ">
+                                <p><strong>Kyle Burton</strong> Founder & CEO, Huddle
+                                </p>
                            </div>
-                               
                     </div>
-                    
+                </div>
+                <div>
                 </div>
                 <div class="container-fluid text-center">
                     <div class="col-sm-12" >
@@ -81,9 +89,9 @@ Founder & CEO, Huddle </pre>
                     </div>
                     <form class=" row col-sm-12 ">
                         <div  class=" d-flex flex-column ">
-                            <input type="email" class="form-control col-6 " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder ="johnappleseed@mail.com">
-                            <small class="text-light  col-6"> please check your email</small>
-                            <button type="submit" class="btn btn-primary col-6"> Get Started for free </button>                          
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder ="johnappleseed@mail.com">
+                            <small class="text-light "> please check your email</small>
+                            <button type="submit" class="btn btn-primary "> Get Started for free </button>                          
                         </div>
                     </form>
                 </div>   
@@ -96,7 +104,7 @@ Founder & CEO, Huddle </pre>
                     <a href=""><img src="assets/img/logo_w.svg" width="80px" class="my-4"></a>
                 </div> 
                 
-                <div class="d-flex justify-content-between      ">
+                <div class="d-flex justify-content-between ">
                 
                 <div class="d-flex flex-column ">
                     <a class="text-light   " href=""><img src="assets/img/icon-phone.svg">Phone: +1-543-123-4567</a>
@@ -125,7 +133,6 @@ Founder & CEO, Huddle </pre>
             </footer>
             <!-- Bootstrap JavaScript Libraries -->
         </div>    
-
 <body>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
