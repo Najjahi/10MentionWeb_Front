@@ -178,6 +178,9 @@ automatic.addEventListener('click', ()=>{
 
 //********Loader*************** */
 
+/* La ligne `let Loader = document.querySelector('#loader');` sélectionne l'élément HTML avec
+l'identifiant "loader" et le stocke dans une variable nommée `Loader`. Cet élément est généralement
+utilisé pour afficher une animation de chargement ou un message sur la page Web. */
 let Loader = document.querySelector('#loader');
 window.addEventListener('load',()=>{
     Loader.classList.add('hideLoader');

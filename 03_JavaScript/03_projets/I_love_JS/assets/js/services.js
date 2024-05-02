@@ -2,7 +2,7 @@
 
 let Loader = document.querySelector('#loader');
 window.addEventListener('load',()=>{
-Loader.classList.add('hideloader');
+Loader.classList.add('hideLoader');
 
 })
 
@@ -30,51 +30,51 @@ console.log(event);
 
 //console.log(mario.offsetLeft);
 
-// if (event.key == "ArrowUp") {
-//     mario.style.top = mario.offsetTop - 10 + "px";
+if (event.key == "ArrowUp") {
+    mario.style.top = mario.offsetTop - 10 + "px";
     
-// } else if(event.key == "ArrowRight") {
-//     mario.style.left = mario.offsetLeft + 10 + "px";
+} else if(event.key == "ArrowRight") {
+    mario.style.left = mario.offsetLeft + 10 + "px";
     
-// } else if(event.key == "ArrowDown") {
-//     mario.style.top = mario.offsetTop + 10 + "px";
+} else if(event.key == "ArrowDown") {
+    mario.style.top = mario.offsetTop + 10 + "px";
 
-// } else if(event.key == "ArrowLeft") {
-//     mario.style.left = mario.offsetLeft - 10 + "px";
+} else if(event.key == "ArrowLeft") {
+    mario.style.left = mario.offsetLeft - 10 + "px";
     
-// }
+}
 
-// if (event.key == "z") { // en haut à gauche
+if (event.key == "z") { // en haut à gauche
    
-//     mario.style.left = mario.offsetLeft - 10 + "px";
-//     mario.style.top = mario.offsetTop - 10 + "px";
-//     mario.style.rotate="40deg";
-//     mario.style.transform = "scaleX(-1)";
+    mario.style.left = mario.offsetLeft - 10 + "px";
+    mario.style.top = mario.offsetTop - 10 + "px";
+    mario.style.rotate="40deg";
+    mario.style.transform = "scaleX(-1)";
 
     
-// } else if(event.key == "s") {
-//     mario.style.top = mario.offsetTop - 10 + "px";
-//     mario.style.left = mario.offsetLeft + 10 + "px";
-//     mario.style.rotate="-40deg";
-//     mario.style.transform = "scaleX(1)";
+} else if(event.key == "s") {
+    mario.style.top = mario.offsetTop - 10 + "px";
+    mario.style.left = mario.offsetLeft + 10 + "px";
+    mario.style.rotate="-40deg";
+    mario.style.transform = "scaleX(1)";
    
     
-// } else if(event.key == "q") {
+} else if(event.key == "q") {
 
-//     mario.style.top = mario.offsetTop + 10 + "px";
-//     mario.style.left = mario.offsetLeft - 10 + "px";
-//     mario.style.rotate ="-40deg";
-//     mario.style.transform = "scaleX(-1)";
+    mario.style.top = mario.offsetTop + 10 + "px";
+    mario.style.left = mario.offsetLeft - 10 + "px";
+    mario.style.rotate ="-40deg";
+    mario.style.transform = "scaleX(-1)";
 
-// } else if(event.key == "d") {
-//     mario.style.left = mario.offsetLeft + 10 + "px";
-//     mario.style.top = mario.offsetTop + 10 + "px";
-//     mario.style.rotate ="40deg";
-//     mario.style.transform = "scaleX(1)";
+} else if(event.key == "d") {
+    mario.style.left = mario.offsetLeft + 10 + "px";
+    mario.style.top = mario.offsetTop + 10 + "px";
+    mario.style.rotate ="40deg";
+    mario.style.transform = "scaleX(1)";
     
-// }
+}
 
-//}
+}
 //////***********avec switch********** */
 
 // switch(event.code){
@@ -152,4 +152,4 @@ console.log(event);
     //     mario.style.left = mario.offsetLeft - 10 + 'px';
 
     // }
-}
+//}
