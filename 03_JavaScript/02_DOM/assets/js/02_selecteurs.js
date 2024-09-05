@@ -1,5 +1,5 @@
 // alert("ok");
-/* afin de modifier notre page html selon les intéractions nous allons modifier notre DOM GRACE 0 javascript*/
+/* afin de modifier notre page html selon les intéractions nous allons modifier notre DOM GRACE à javascript*/
 //-------------------------------
 // SELECTIONER NOS ELEMENTS
 //-------------------------------

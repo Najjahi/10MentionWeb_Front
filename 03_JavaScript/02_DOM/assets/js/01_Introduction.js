@@ -41,7 +41,7 @@ console.log(document.title);
  */
 
 /*
-     Afin de modifier notre page HTML selon les intéractions d'un utilisateur nous allons modifier notre DOM grâce javascript.
+     Afin de modifier notre page HTML selon les intéractions d'un utilisateur nous allons modifier notre DOM grâce à javascript.
  
      SELECTIONNER NOS ELEMENTS
       */

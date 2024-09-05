@@ -1,8 +1,0 @@
-{
-    "docwriter.language": "French",
-    "docwriter.progress.trackClasses": true,
-    "docwriter.progress.trackMethods": false,
-    "docwriter.progress.trackTypes": true,
-    "docwriter.style": "reST",
-    "liveServer.settings.port": 5501
-}

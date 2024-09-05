@@ -52,7 +52,7 @@ nav a {
     font-weight: 600;
     text-transform: uppercase;
 }
-/* ::before  crée un pseudo-élément qui sera le premier enfant de l'élément ciblé. Généralement utilisé pour ajouter du contenu esthétique à un élément via la propriété CSS content. Par défaut, l'élément créé est de type en-ligne */
+/* ::before crée un pseudo-élément qui sera le premier enfant de l'élément ciblé. Généralement utilisé pour ajouter du contenu esthétique à un élément via la propriété CSS content. Par défaut, l'élément créé est de type en-ligne */
 nav a::before {
     content: '- ';
 }

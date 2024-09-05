@@ -1,0 +1,16 @@
+.post-image {
+    background-image: url('/assets/img/mustache1.jpg');
+    width: 50%;
+    height: 350px;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-inline: auto;
+}
+
+@media screen and (max-width: 991px) {
+    .post-image {
+        width: 75%;
+        height: 150px;
+    }
+}

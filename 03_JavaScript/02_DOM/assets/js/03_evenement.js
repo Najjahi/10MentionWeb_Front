@@ -25,7 +25,7 @@
 
         ------------------ Les écouteurs d'évènements -------------------
 
-    Pour attacher un évènementà un élèment, ou autrement dit, pour déclencher un écouteur d'évènement qui se chargera de déclencher une fonction, je vais utliser la syntaxe suivante
+    Pour attacher un évènement un élèment, ou autrement dit, pour déclencher un écouteur d'évènement qui se chargera de déclencher une fonction, je vais utliser la syntaxe suivante
          selecteur.addEventListener('évènement', fonction);
 
           Etape 1 -> selectionner les elements

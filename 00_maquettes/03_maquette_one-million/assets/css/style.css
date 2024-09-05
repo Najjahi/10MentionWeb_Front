@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     box-sizing: border-box;
     text-decoration: none;
@@ -109,6 +110,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+    border-radius: 10%;
 
 }
 main a {
@@ -119,3 +122,73 @@ main a:hover {
     color: var(--btn-white-hover);
 
 }
+/* .team1 {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../img/joanne.jpg);
+    
+} */
+/* .team2 {
+
+    background-image: url(../img/gaston.jpg);
+   
+}
+.team3 {
+
+    background-image: url(../img/manuel.jpg);
+    
+}
+
+.team4 {
+    background-image: url(../img/tracy.jpg);
+    
+}
+
+.personJoanne {
+    background-image: url(../img/joanne.jpg);
+}
+.personGaston {
+    background-image: url(../img/gaston.jpg);
+
+}
+    
+.personManuel{
+    background-image: url(../img/manuel.jpg);
+
+}
+.personTracy {
+    background-image: url(../img/tracy.jpg);
+
+ ///methode sahar///
+
+
+#team1 {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../img/joanne.jpg);
+    
+} 
+#team2 {
+
+    background-image: url(../img/gaston.jpg);
+   
+}
+#team3 {
+
+    background-image: url(../img/manuel.jpg);
+    
+}
+
+.team4 {
+    background-image: url(../img/tracy.jpg);
+    
+}
+

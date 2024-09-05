@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Correction de l'exercice intégration : page de contact">
+    <meta name="author" content="Sahar ferchichi">
+    <link rel="shortcut icon" href="assets/img/s1b1.jpeg" type="image/x-icon">  
+    <link rel="stylesheet" href="assets/css/commun_style.css">
+    <link rel="stylesheet" href="assets/css/mediaQueries.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+
+    <title>Maquette integration</title>
+</head>
+<body>    
+    <header> <!--  L'en-tête de la page avec un logo et une barre de navigation -->
+        <a href="index.html">
+            <img src="assets/img/s1b1.jpeg" alt="Logo du site">
+        </a>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="a_propos.html">À propos</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 class="col-sm-12 col-lg-12">Laisser nous un message</h1>
+            <p class="col-sm-12 col-lg-12">Utiliser le formulaire de contact pour nous transmettre un message,nous vous répondrons dans les plus brefs délais.</p>
+        </section>
+        <section >        
+              <!--début du formulaire  -->
+                <form method="post" action="#" class="col-sm-8 col-lg-6">
+                    <!-- - action : permet d'indiquer où on récupére nos données , l'adresse de la page ou du fichier qui va traiter les informations envoyées par le formulaire.
+                - method : permet d'indiquer si on récupére les données ou bien on les envoie. Exemple : lorsque l'on s'inscrit sur un site, nos données qui se trouvent déjà dans une BDD. 
+                method="post" : envoie les données sans passer par la barre d'adresse, .-->
+                    <label for="email" class="col-sm-12 col-lg-12">E-mail</label>
+                   <!-- label désigne l'étiquette du champs, elle permet d'informer sur l'info attendu -->
+                    <input type="email" name="email" id="email" class="col-sm-12 col-lg-12">
+                <!-- input: élément de saisie de formulaire : sa valeur depond de l'attribut type qui l'accompagne 
+                    name: pour récupérer la valeur en php
+                            placeholder: garder la place = exemple de contenu valable.
+                            required : le champ doit être renseigné, c'est un attribut qui n'a pas de valeur-->
+                         
+                    <i class="fa-solid fa-exclamation"></i>
+                    <i class="fa-solid fa-circle-check"></i>
+                   
+                    <label for="subject" class="col-sm-12 col-lg-12">Sujet</label>
+                   
+                    <input type="text" name="subject" id="subject" class="col-sm-12 col-lg-12">
+                    
+                    <i class="fa-solid fa-exclamation"></i>
+                    <i class="fa-solid fa-circle-check"></i>
+                   
+                    <label for="message" class="col-sm-12 col-lg-12">Votre message</label>
+                  
+                    <textarea name="message" id="message" class="col-sm-12 col-lg-12"></textarea>
+
+                    <i class="fa-solid fa-exclamation"></i>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <div class="col-sm-12 col-lg-12">
+                        <button type="submit" class="col-sm-3">Envoyer</button>
+                        <button type="reset" class="col-sm-3">Effacer</button>
+                    </div>
+                </form>
+           
+        </section>
+    </main>
+      
+    <footer>
+        <ul>
+            <li><a href="#">Lien</a></li>
+            <li><a href="#">Lien</a></li>
+            <li><a href="#">Lien</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Lien</a></li>
+            <li><a href="#">Lien</a></li>
+            <li><a href="#">Lien</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Lien</a></li>
+            <li><a href="#">Lien</a></li>
+            <li><a href="#">Lien</a></li>
+        </ul>
+
+    </footer>
+        <script src="assets/js/contact.js">
+
+        </script>
+</body>
+</html>
+
